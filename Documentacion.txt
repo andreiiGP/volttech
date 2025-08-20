@@ -1,0 +1,77 @@
+    1. instalar node
+    2. en visual estudio colocar el comando npm create vite este es mas actual que el create-react-app
+    3. seguir lo que sale en consola.
+       4. creacion de componetes
+          - creamos la carpeta componetes dentro de ella cremos los componentes con al extencion jsx 
+            dentro del componete creamos export default function nombre de la funcion(){},dentro colocamos el return() 
+            dentro de los parentecis del return colocamos el codigo a mostar en la app con div o un <> </>
+          - para mostrar el componete vamos app.jsx importamos al ruta del componente import nombrecomponente from 'ruta'
+            seguido dentro de la funcion y el return colocamos el nombre del componente importado con <nombrecomponete/>
+    5.props
+        -para usar props o edicion dinamica , colocamos en el componente dentro de la funcion , se le agrega un parametro
+         props es decir export default function Barranav(prop){} y en el contenido donde tenemos texto estatico se cambia 
+            Ejemplo
+            - <button>CLIK</button> a <button>{prop.nombre}</button>
+        una ves se alla cambiado dentro de app se llama lo que hemos realizado de la siguinte manera 
+
+          return (
+             <>
+             <nombrecomponete
+                nombre="hola mundo"
+             />
+            </>    
+            )
+        esto mostrara hola mundo en el boton igualmnete si dan otro valor en cual quier etiqueta html
+    6.herramisntas de desarollo para react crear componentes rapidamnete
+        - extencion ES7+ React/Redux/React-Native snippets para usarla le damos ctrl+shift+p hay podemos buscar o podermos 
+          escribri rfc y dar enter para crear el componete mas rapido
+
+    7.componentes de clase 
+        - estos actualmente no se usan
+        - para crear un componete de calse damos import React, { Component } from "react"; y despues e crea la clase
+            nomal como en java class nombreclase extends Component {} debe tener un costructor y un reder detro del 
+            render debe ir un return  y a  final de los corchetes de la clase se debe exportar export default nombreclase;
+            ademas para declarar propiedades de objeto se debe colcar this 
+
+    8. composicion componentes 
+        -difrerentes componentes pueden interactuar entre ellos  
+        -pero tambien si definimois en la funcion padre la informacion se puede eredar a sus hijos 
+        Ejemplo
+            -antes
+
+              <Barranav
+                nombre="hola mundo"
+                />
+            -despues
+                  <Barranav
+                     nombre={nombre}
+                    />
+
+    9.🧠 ¿Qué son los Hooks en React?
+      Los Hooks son funciones especiales de React que te permiten usar estado, efectos y otras características de 
+      React en componentes funcionales (es decir, funciones, no clases).React los introdujo en la versión 16.8, y 
+      desde entonces, los hooks han reemplazado casi por completo el uso de componentes de clase en proyectos modernos.
+      
+      -🧰Tipos de Hooks más comunes
+
+        .useState → para manejar el estado.
+        .useEffect → para manejar efectos secundarios (como peticiones a APIs, timers, etc).
+        .useContext → para usar el contexto de React.
+        .useRef, useReducer, useMemo, useCallback, etc. → hooks más avanzados.
+    
+    10. react router
+        -funciona apra enlasar diferentes hojas del sitio web que estemos costruyendo en la termianl se instala 
+         con el comando npm install react-router-dom 
+        -para usarlo se tiene que importar en el componente asi : import {BrowserRouter} from 'react-router-dom'
+
+    11-minificar la app 
+
+      -npm build ye  neter se creia una carpeta dist
+      -para probarlo toca en un servidor o verlo con npm run preview 
+
+    12 publicar mi desarollo  
+       
+       -introducir comando npm install gh-pages --save-dev
+       -los buscamos en el pakaje.json
+       -en la seccion scripts escribimos "predeploy : "npm run build"
+       -seguido vamos a escribir "deploy : "gh-pages -d dist  "  
