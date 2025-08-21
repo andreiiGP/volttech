@@ -1,25 +1,39 @@
 /* ESTILO DE LA BARRA DE NAVEGACION */
 #ttitunav {
-    text-align: center;
-    font-size: 30px;
-    margin-top: -35px;
-    position: relative;
-    padding-left: 32%;
-    color: #000000;
-    border-left-color: #000000;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -35px;
+  position: relative;
+  padding-left: 32%;
+  color: #000000;
+  border-left-color: #000000;
 }
 
-.var-color{
-    background-color: #ffc72c;
+.var-color {
+  background-color: #ffc72c;
 
 }
 
-/* ETILOS DE INICIO */
+.colornav {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
 
-.imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.colornav::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.colornav:hover::after {
+  width: 100%;
 }
 
 .colornav {
@@ -45,3 +59,46 @@
 }
 
 
+/* ETILOS DE INICIO */
+
+.containerfondo {
+  margin-top: 6.3%;
+  height: 534px;
+}
+
+.imagen {
+  object-fit: contain;
+  height: 100%; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.404); /* Negro con 50% transparencia */
+/*   transform: translate(-100%, -100%); */
+}
+
+.parrafo {
+  position: absolute;
+  top: 25%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid #ffc72cab;
+}
+.Titulicontenido{
+
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-10%, -10%);
+  color: #ffc72ce1;
+  font-size:6em;
+  font-family:"Oswald", sans-serif;;
+
+}

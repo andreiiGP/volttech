@@ -6,7 +6,7 @@ export default function Navegacion(prop) {
     return (
         <nav class="navbar var-color navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img src={logo}  width="50" height="50"></img>
                     <h3 id='ttitunav'>{prop.Titulo}</h3></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"

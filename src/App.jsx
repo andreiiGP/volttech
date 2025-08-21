@@ -16,9 +16,8 @@ function App() {
         Contacto="Contacto" />
       <section>
         <Contenido
-
-
-
+        Pcontenidoimagen="Innovación  Electrica"
+        Contenidoimagen="Todo lo que necesitas para tu propiedad."
         />
       </section>
 
