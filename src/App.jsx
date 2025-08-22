@@ -2,27 +2,37 @@ import { useState } from 'react'
 import './App.css'
 import Navegacion from './components/Navegacion'
 import Contenido from './components/Contenido'
+import Nosotros from './components/Nosotros'
 
 function App() {
 
   return (
-    <div id='Inicio'>
+    <>
+      <section id='Inicio'>
       < Navegacion
-        Titulo="VOLTTECH ⚡"
+        Titulo="VOLTTECH"
         Inicio="Inicio"
         Nosotros="Nostros"
         Proyectos="Proyectos"
         Servicios="Servicios"
-        Contacto="Contacto" />
+        Contacto="Contacto" 
+        Loguin="Loguin" />
+      </section>
       <section>
         <Contenido
         Pcontenidoimagen="Innovación  Electrica"
-        Contenidoimagen="Todo lo que necesitas para tu propiedad."
+        Contenidoimagen="SOLUCIONES ELÉCTRICAS INTEGRALES PARA TU PROPIEDAD"
         />
       </section>
-
-
-    </div>
+      <section id='Nosotros'>
+        <Nosotros
+        Titulonosotros="Nuestra Empresa"
+        
+        
+        
+        />
+      </section>
+    </>
   )
 }
 

@@ -5,13 +5,12 @@ export default function Contenido(prop) {
     <>
       <section className='containerfondo'>
         <img className='imagen' src={imgfondo} alt="imagen no encontrada" />
-         <div className="overlay"></div>
-         <p className='parrafo'>{prop.Pcontenidoimagen}</p>
-         <h1 className='Titulicontenido'>{prop.Contenidoimagen}</h1>
+        <div className="overlay"></div>
+        <p className='parrafo slide-right '>{prop.Pcontenidoimagen}</p>
+        <div className="overlaydos">
+          <h1 className='Titulicontenido slide-right'>{prop.Contenidoimagen}</h1>
+        </div>
       </section>
-
-
-
     </>
   )
 }

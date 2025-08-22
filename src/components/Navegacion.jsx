@@ -30,6 +30,9 @@ export default function Navegacion(prop) {
                         <li className="nav-item">
                             <a className="nav-link colornav" id="nav-a" href="#Contacto">{prop.Contacto}</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link colornav" id="nav-a" href="loguin">{prop.Loguin}</a>
+                        </li>
                     </ul>
 
                 </div>
